@@ -107,7 +107,6 @@
 			<Item Name="LimitSwitches.ctl" Type="VI" URL="../Typedefs/LimitSwitches.ctl"/>
 			<Item Name="OutputData.ctl" Type="VI" URL="../Typedefs/OutputData.ctl"/>
 			<Item Name="PubDataEvents.ctl" Type="VI" URL="../Typedefs/PubDataEvents.ctl"/>
-			<Item Name="ResponseQueues.ctl" Type="VI" URL="../Typedefs/ResponseQueues.ctl"/>
 			<Item Name="StateSelector.ctl" Type="VI" URL="../Typedefs/StateSelector.ctl"/>
 			<Item Name="SubDataEvents.ctl" Type="VI" URL="../Typedefs/SubDataEvents.ctl"/>
 		</Item>
