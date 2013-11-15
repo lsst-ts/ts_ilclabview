@@ -2,8 +2,8 @@
 <Project Type="Project" LVVersion="12008004">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{0A826FB8-E680-4C94-B74B-C69FB42C414D}" Type="Ref">/My Computer/Variables/ILCVariables.lvlib/LoopRate_ms</Property>
-	<Property Name="varPersistentID:{50D09826-3C10-40A3-92A7-2AFEB27D1AB3}" Type="Ref">/My Computer/Variables/ILCVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{0A826FB8-E680-4C94-B74B-C69FB42C414D}" Type="Ref">/My Computer/Variables/Application/ApplicationVariables.lvlib/LoopRate_ms</Property>
+	<Property Name="varPersistentID:{50D09826-3C10-40A3-92A7-2AFEB27D1AB3}" Type="Ref">/My Computer/Variables/Application/ApplicationVariables.lvlib/ExitIsTrue</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -33,17 +33,17 @@
 		</Item>
 		<Item Name="Configuration" Type="Folder">
 			<Item Name="Application" Type="Folder">
-				<Item Name="ApplicationTiming.ctl" Type="VI" URL="../Model/Model/ApplicationTiming.ctl"/>
+				<Item Name="ApplicationTiming.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/Component/Application/Configuration/ApplicationTiming.ctl"/>
 			</Item>
 			<Item Name="ILC" Type="Folder">
-				<Item Name="ILCConfig.ctl" Type="VI" URL="../Configuration/ILCConfig.ctl"/>
-				<Item Name="InputChannels.ctl" Type="VI" URL="../Configuration/InputChannels.ctl"/>
-				<Item Name="ScanRate_Hz_Ch0Options.ctl" Type="VI" URL="../Configuration/ScanRate_Hz_Ch0Options.ctl"/>
-				<Item Name="ScanRate_Hz_MultichannelOptions.ctl" Type="VI" URL="../Configuration/ScanRate_Hz_MultichannelOptions.ctl"/>
+				<Item Name="ILCConfig.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Configuration/ILCConfig.ctl"/>
+				<Item Name="InputChannels.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Configuration/InputChannels.ctl"/>
+				<Item Name="ScanRate_Hz_Ch0Options.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Configuration/ScanRate_Hz_Ch0Options.ctl"/>
+				<Item Name="ScanRate_Hz_MultichannelOptions.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Configuration/ScanRate_Hz_MultichannelOptions.ctl"/>
 			</Item>
 			<Item Name="SerialProtocols" Type="Folder">
-				<Item Name="RS232Config.ctl" Type="VI" URL="../Configuration/RS232Config.ctl"/>
-				<Item Name="SerialProtocol.ctl" Type="VI" URL="../Configuration/SerialProtocol.ctl"/>
+				<Item Name="RS232Config.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/SerialProtocols/Configuration/RS232Config.ctl"/>
+				<Item Name="SerialProtocol.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/SerialProtocols/Configuration/SerialProtocol.ctl"/>
 			</Item>
 			<Item Name="ILCAppConfig.ctl" Type="VI" URL="../State/ILCAppConfig.ctl"/>
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
@@ -57,10 +57,10 @@
 		<Item Name="Model" Type="Folder">
 			<Item Name="ILC" Type="Folder">
 				<Item Name="ILCModelTypedefs" Type="Folder">
-					<Item Name="FinalDelimiter.ctl" Type="VI" URL="../Model/ILCModelTypedefs/FinalDelimiter.ctl"/>
-					<Item Name="InitialDelimiter.ctl" Type="VI" URL="../Model/ILCModelTypedefs/InitialDelimiter.ctl"/>
+					<Item Name="FinalDelimiter.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/ILCModelTypedefs/FinalDelimiter.ctl"/>
+					<Item Name="InitialDelimiter.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/ILCModelTypedefs/InitialDelimiter.ctl"/>
 				</Item>
-				<Item Name="ILC.lvclass" Type="LVClass" URL="../Model/ILC/ILC.lvclass"/>
+				<Item Name="ILC.lvclass" Type="LVClass" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/ILC/ILC.lvclass"/>
 			</Item>
 			<Item Name="ISDAFactory" Type="Folder">
 				<Item Name="ISDAFactory.lvclass" Type="LVClass" URL="../Model/ISDAFactory/ISDAFactory.lvclass"/>
@@ -69,17 +69,13 @@
 				<Item Name="SDAFactory.lvclass" Type="LVClass" URL="../Model/SDAFactory/SDAFactory.lvclass"/>
 			</Item>
 			<Item Name="SerialCommunicator" Type="Folder">
-				<Item Name="RS232" Type="Folder">
-					<Item Name="RS232.lvclass" Type="LVClass" URL="../Model/RS232/RS232.lvclass"/>
-				</Item>
-				<Item Name="RS485" Type="Folder">
-					<Item Name="RS485.lvclass" Type="LVClass" URL="../Model/RS485/RS485.lvclass"/>
+				<Item Name="Implementations" Type="Folder">
+					<Item Name="RS232.lvclass" Type="LVClass" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/SerialProtocols/Implementations/RS232/RS232.lvclass"/>
+					<Item Name="RS485.lvclass" Type="LVClass" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/SerialProtocols/Implementations/RS485/RS485.lvclass"/>
+					<Item Name="SerialSimulator.lvclass" Type="LVClass" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/SerialProtocols/Implementations/SerialSimulator/SerialSimulator.lvclass"/>
 				</Item>
 				<Item Name="SerialCommunicator" Type="Folder">
-					<Item Name="SerialCommunicator.lvclass" Type="LVClass" URL="../Model/SerialCommunicator/SerialCommunicator.lvclass"/>
-				</Item>
-				<Item Name="SerialSimulator" Type="Folder">
-					<Item Name="SerialSimulator.lvclass" Type="LVClass" URL="../Model/SerialSimulator/SerialSimulator.lvclass"/>
+					<Item Name="SerialCommunicator.lvclass" Type="LVClass" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/SerialProtocols/SerialCommunicator/SerialCommunicator.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="StreamingDataAlgorithm" Type="Folder">
@@ -106,11 +102,13 @@
 			<Item Name="StandbyState.lvclass" Type="LVClass" URL="../States/StandbyState/StandbyState.lvclass"/>
 		</Item>
 		<Item Name="Typedefs" Type="Folder">
-			<Item Name="ADCs.ctl" Type="VI" URL="../Typedefs/ADCs.ctl"/>
+			<Item Name="ILC" Type="Folder">
+				<Item Name="ADCs.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Typedefs/ADCs.ctl"/>
+				<Item Name="InputData.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Typedefs/InputData.ctl"/>
+				<Item Name="LimitSwitches.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Typedefs/LimitSwitches.ctl"/>
+				<Item Name="OutputData.ctl" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/ILC/Typedefs/OutputData.ctl"/>
+			</Item>
 			<Item Name="CommandSelector.ctl" Type="VI" URL="../Typedefs/CommandSelector.ctl"/>
-			<Item Name="InputData.ctl" Type="VI" URL="../States/DataOnDemandState/InputData.ctl"/>
-			<Item Name="LimitSwitches.ctl" Type="VI" URL="../Typedefs/LimitSwitches.ctl"/>
-			<Item Name="OutputData.ctl" Type="VI" URL="../Typedefs/OutputData.ctl"/>
 			<Item Name="PubDataEvents.ctl" Type="VI" URL="../Typedefs/PubDataEvents.ctl"/>
 			<Item Name="StateSelector.ctl" Type="VI" URL="../Typedefs/StateSelector.ctl"/>
 			<Item Name="SubDataEvents.ctl" Type="VI" URL="../Typedefs/SubDataEvents.ctl"/>
@@ -119,7 +117,9 @@
 			<Item Name="UserEvents.lvclass" Type="LVClass" URL="../UserEvents/UserEvents.lvclass"/>
 		</Item>
 		<Item Name="Variables" Type="Folder">
-			<Item Name="ILCVariables.lvlib" Type="Library" URL="../Variables/ILCVariables.lvlib"/>
+			<Item Name="Application" Type="Folder">
+				<Item Name="ApplicationVariables.lvlib" Type="Library" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2012/user.lib/Common/Component/Application/Variables/ApplicationVariables.lvlib"/>
+			</Item>
 		</Item>
 		<Item Name="View" Type="Folder">
 			<Item Name="editConfiguration.vi" Type="VI" URL="../View/editConfiguration.vi"/>
