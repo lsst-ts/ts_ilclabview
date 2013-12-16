@@ -2,7 +2,8 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{18E3AE78-4156-4235-8C5A-9A2E7C0D7AF3}" Type="Ref"></Property>
+	<Property Name="varPersistentID:{62515354-9FBD-47AD-BB19-CDE294CE4688}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/LoopRate_ms</Property>
+	<Property Name="varPersistentID:{A23A64DD-E0A0-4BB3-8269-24F565A3B8A9}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/ExitIsTrue</Property>
 	<Property Name="varPersistentID:{E5DFE533-162F-40A7-8134-28766D6D27C0}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
