@@ -1,0 +1,15 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>13.0f2</Version>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>Application</Name>
+<NumElts>1</NumElts>
+<U16>
+<Name>Loop Period (ms)</Name>
+<Val>100</Val>
+</U16>
+</Cluster>
+</LvVariant>
+</LVData>

@@ -1,0 +1,88 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>13.0f2</Version>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>ILC</Name>
+<NumElts>4</NumElts>
+<EW>
+<Name>Input Channels</Name>
+<Choice>Channel 0</Choice>
+<Choice>3 Channels</Choice>
+<Choice>5 Channels</Choice>
+<Val>2</Val>
+</EW>
+<EW>
+<Name>Scan Rate (Hz) </Name>
+<Choice>50</Choice>
+<Choice>60</Choice>
+<Choice>100</Choice>
+<Choice>120</Choice>
+<Choice>200</Choice>
+<Choice>240</Choice>
+<Choice>300</Choice>
+<Choice>400</Choice>
+<Choice>480</Choice>
+<Choice>600</Choice>
+<Choice>1200</Choice>
+<Choice>2400</Choice>
+<Choice>4800</Choice>
+<Val>0</Val>
+</EW>
+<U8>
+<Name>ADC PGA Gain</Name>
+<Val>1</Val>
+</U8>
+<Cluster>
+<Name>SerialConfig</Name>
+<NumElts>2</NumElts>
+<EW>
+<Name>Serial Protocol</Name>
+<Choice>RS232</Choice>
+<Choice>RS485</Choice>
+<Choice>SerialSimulator</Choice>
+<Val>2</Val>
+</EW>
+<Cluster>
+<Name>Protocol Parameters</Name>
+<NumElts>7</NumElts>
+<Refnum>
+<Name>VISA resource name</Name>
+<RefKind>VISA</RefKind>
+<Val></Val>
+</Refnum>
+<U32>
+<Name>Baud Rate</Name>
+<Val>19200</Val>
+</U32>
+<U16>
+<Name>Data Bits</Name>
+<Val>8</Val>
+</U16>
+<EW>
+<Name>Parity</Name>
+<Choice>None</Choice>
+<Choice>Odd</Choice>
+<Choice>Even</Choice>
+<Choice>Mark</Choice>
+<Choice>Space</Choice>
+<Val>0</Val>
+</EW>
+<U16>
+<Name>Flow Control</Name>
+<Val>0</Val>
+</U16>
+<U16>
+<Name>Stop Bits</Name>
+<Val>10</Val>
+</U16>
+<U32>
+<Name>Timeout (ms)</Name>
+<Val>10000</Val>
+</U32>
+</Cluster>
+</Cluster>
+</Cluster>
+</LvVariant>
+</LVData>
