@@ -28,7 +28,7 @@
 <Choice>1200</Choice>
 <Choice>2400</Choice>
 <Choice>4800</Choice>
-<Val>0</Val>
+<Val>8</Val>
 </EW>
 <U8>
 <Name>ADC PGA Gain</Name>
@@ -42,7 +42,7 @@
 <Choice>RS232</Choice>
 <Choice>RS485</Choice>
 <Choice>SerialSimulator</Choice>
-<Val>2</Val>
+<Val>0</Val>
 </EW>
 <Cluster>
 <Name>Protocol Parameters</Name>
@@ -50,11 +50,11 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val></Val>
+<Val>COM4</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
-<Val>19200</Val>
+<Val>115200</Val>
 </U32>
 <U16>
 <Name>Data Bits</Name>
