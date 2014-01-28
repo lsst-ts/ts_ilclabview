@@ -11,7 +11,7 @@
 <Choice>Channel 0</Choice>
 <Choice>3 Channels</Choice>
 <Choice>5 Channels</Choice>
-<Val>2</Val>
+<Val>1</Val>
 </EW>
 <EW>
 <Name>Scan Rate (Hz) </Name>
