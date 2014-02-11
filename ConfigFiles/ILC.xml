@@ -11,7 +11,7 @@
 <Choice>Channel 0</Choice>
 <Choice>3 Channels</Choice>
 <Choice>5 Channels</Choice>
-<Val>1</Val>
+<Val>0</Val>
 </EW>
 <EW>
 <Name>Scan Rate (Hz) </Name>
@@ -32,11 +32,11 @@
 </EW>
 <U8>
 <Name>ADC PGA Gain</Name>
-<Val>1</Val>
+<Val>0</Val>
 </U8>
 <Cluster>
 <Name>SerialConfig</Name>
-<NumElts>2</NumElts>
+<NumElts>3</NumElts>
 <EW>
 <Name>Serial Protocol</Name>
 <Choice>RS232</Choice>
@@ -50,7 +50,7 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val>COM4</Val>
+<Val>COM3</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
@@ -81,6 +81,22 @@
 <Name>Timeout (ms)</Name>
 <Val>10000</Val>
 </U32>
+</Cluster>
+<Cluster>
+<Name>Serial Message Parameters</Name>
+<NumElts>3</NumElts>
+<U32>
+<Name>Byte Count</Name>
+<Val>200</Val>
+</U32>
+<Boolean>
+<Name>Enable Termination Character</Name>
+<Val>0</Val>
+</Boolean>
+<U8>
+<Name>Termination Char</Name>
+<Val>200</Val>
+</U8>
 </Cluster>
 </Cluster>
 </Cluster>
