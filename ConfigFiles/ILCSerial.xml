@@ -1,48 +1,20 @@
 <?xml version='1.0' standalone='yes' ?>
 <LVData xmlns="http://www.ni.com/LVData">
-<Version>13.0f2</Version>
+<Version>13.0.1</Version>
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>ILC</Name>
-<NumElts>4</NumElts>
-<EW>
-<Name>Input Channels</Name>
-<Choice>Channel 0</Choice>
-<Choice>3 Channels</Choice>
-<Choice>5 Channels</Choice>
-<Val>0</Val>
-</EW>
-<EW>
-<Name>Scan Rate (Hz) </Name>
-<Choice>50</Choice>
-<Choice>60</Choice>
-<Choice>100</Choice>
-<Choice>120</Choice>
-<Choice>200</Choice>
-<Choice>240</Choice>
-<Choice>300</Choice>
-<Choice>400</Choice>
-<Choice>480</Choice>
-<Choice>600</Choice>
-<Choice>1200</Choice>
-<Choice>2400</Choice>
-<Choice>4800</Choice>
-<Val>8</Val>
-</EW>
-<U8>
-<Name>ADC PGA Gain</Name>
-<Val>0</Val>
-</U8>
+<Name>ILC Serial</Name>
+<NumElts>1</NumElts>
 <Cluster>
-<Name>SerialConfig</Name>
+<Name>Serial</Name>
 <NumElts>3</NumElts>
 <EW>
 <Name>Serial Protocol</Name>
 <Choice>RS232</Choice>
 <Choice>RS485</Choice>
 <Choice>SerialSimulator</Choice>
-<Val>0</Val>
+<Val>2</Val>
 </EW>
 <Cluster>
 <Name>Protocol Parameters</Name>
@@ -50,7 +22,7 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val>COM3</Val>
+<Val></Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
@@ -79,7 +51,7 @@
 </U16>
 <U32>
 <Name>Timeout (ms)</Name>
-<Val>10000</Val>
+<Val>1000</Val>
 </U32>
 </Cluster>
 <Cluster>
@@ -91,11 +63,11 @@
 </U32>
 <Boolean>
 <Name>Enable Termination Character</Name>
-<Val>0</Val>
+<Val>1</Val>
 </Boolean>
 <U8>
 <Name>Termination Char</Name>
-<Val>200</Val>
+<Val>10</Val>
 </U8>
 </Cluster>
 </Cluster>

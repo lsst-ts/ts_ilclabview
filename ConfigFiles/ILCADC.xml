@@ -1,0 +1,55 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>13.0.1</Version>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>ILC ADC</Name>
+<NumElts>7</NumElts>
+<EW>
+<Name>Input Channels</Name>
+<Choice>Channel 0</Choice>
+<Choice>3 Channels</Choice>
+<Choice>5 Channels</Choice>
+<Val>1</Val>
+</EW>
+<EW>
+<Name>Scan Rate (Hz) </Name>
+<Choice>50</Choice>
+<Choice>60</Choice>
+<Choice>100</Choice>
+<Choice>120</Choice>
+<Choice>200</Choice>
+<Choice>240</Choice>
+<Choice>300</Choice>
+<Choice>400</Choice>
+<Choice>480</Choice>
+<Choice>600</Choice>
+<Choice>1200</Choice>
+<Choice>2400</Choice>
+<Choice>4800</Choice>
+<Val>8</Val>
+</EW>
+<U8>
+<Name>PGA Gain Coefficient</Name>
+<Val>0</Val>
+</U8>
+<DBL>
+<Name>Reference Voltage Vref</Name>
+<Val>2.50000000000000</Val>
+</DBL>
+<U32>
+<Name>Nominal Input Range in Counts</Name>
+<Val>256902</Val>
+</U32>
+<U8>
+<Name>Preamplifier Gain</Name>
+<Val>101</Val>
+</U8>
+<U16>
+<Name>Conversion Settling Cycles</Name>
+<Val>3</Val>
+</U16>
+</Cluster>
+</LvVariant>
+</LVData>
