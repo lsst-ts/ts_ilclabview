@@ -4,14 +4,14 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>ILC ADC</Name>
+<Name>ILCADC</Name>
 <NumElts>7</NumElts>
 <EW>
 <Name>Input Channels</Name>
 <Choice>Channel 0</Choice>
 <Choice>3 Channels</Choice>
 <Choice>5 Channels</Choice>
-<Val>1</Val>
+<Val>2</Val>
 </EW>
 <EW>
 <Name>Scan Rate (Hz) </Name>
