@@ -35,6 +35,9 @@
 			<Item Name="SwitchToStreamMode.lvclass" Type="LVClass" URL="../Commands/SwitchToStreamMode/SwitchToStreamMode.lvclass"/>
 			<Item Name="Update.lvclass" Type="LVClass" URL="../Commands/Update/Update.lvclass"/>
 		</Item>
+		<Item Name="ConfigFiles" Type="Folder" URL="../ConfigFiles">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Configuration" Type="Folder">
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
 		</Item>
@@ -160,6 +163,54 @@
 			<Item Name="ILCSim1TC.lvclass" Type="LVClass" URL="../Model/ILCSim1TC/ILCSim1TC.lvclass"/>
 			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="ILCTester" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{750D4174-C8F9-41E6-891E-BEFE90FE3345}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{76226DAE-4CB2-42FE-9BF9-684025F06538}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{267B1353-56CD-4755-90EB-6FD4D4023477}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">ILCTester</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/ILCTester</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{1AF67961-6B28-4AA4-BC03-2BFCD01D8EF3}</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">ILCTester.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/ILCTester/ILCTester.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/ILCTester/data</Property>
+				<Property Name="Destination[2].destName" Type="Str">ConfigFiles</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/ILCTester/ConfigFiles</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F2BA58FF-3E00-45EE-8114-0AF746FD2F48}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/View/ilcView.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/ConfigFiles</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">AURA</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">ILCTester</Property>
+				<Property Name="TgtF_internalName" Type="Str">ILCTester</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 </Property>
+				<Property Name="TgtF_productName" Type="Str">ILCTester</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{F9781BAE-08AD-47D2-AB41-1E5C7CF6153A}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">ILCTester.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
