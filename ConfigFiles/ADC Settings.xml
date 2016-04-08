@@ -1,0 +1,39 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>15.0f2</Version>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>ADC Settings</Name>
+<NumElts>3</NumElts>
+<EW>
+<Name>Input Channels</Name>
+<Choice>Channel 0</Choice>
+<Choice>3 Channels</Choice>
+<Choice>5 Channels</Choice>
+<Val>0</Val>
+</EW>
+<EW>
+<Name>Scan Rate (Hz) </Name>
+<Choice>50</Choice>
+<Choice>60</Choice>
+<Choice>100</Choice>
+<Choice>120</Choice>
+<Choice>200</Choice>
+<Choice>240</Choice>
+<Choice>300</Choice>
+<Choice>400</Choice>
+<Choice>480</Choice>
+<Choice>600</Choice>
+<Choice>1200</Choice>
+<Choice>2400</Choice>
+<Choice>4800</Choice>
+<Val>8</Val>
+</EW>
+<U8>
+<Name>PGA Gain Coefficient</Name>
+<Val>0</Val>
+</U8>
+</Cluster>
+</LvVariant>
+</LVData>
